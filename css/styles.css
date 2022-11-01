@@ -379,27 +379,40 @@ header{
 
 
 .blog{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
 	padding: 60px 100px;
 }
-.blog div{
+.blog .boxs{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;	
+}
+.blog-box:first-child{
+	margin-left: 0;
 }
 .blog-box{
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
 	flex-direction: column;
-	width: 350px;
-	height: 400px;
+	width: 400px;
+	height: 450px;
 	margin-left: 40px;
+	margin-top: 40px;
 
 }
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.title a{
+	color: #02E4AF;
+	border-bottom: 2px solid #02e4af8f;
+	text-decoration: none;
+}
 .org-box{
+	display: flex;
 	width: 100%;
 	height: 47%;
 	position: relative;
@@ -413,12 +426,22 @@ header{
 }
 .org-box .overlay{
 	display: flex;
-	align-items: flex-end;
-	justify-content: space-between;
-	flex-direction: column;
-	padding: 20px;
+
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.892) 0%, rgba(227, 227, 227, 0.698) 100%);
+}
+.content-blog{
+	display: flex;
+	justify-content: end;
+	flex-direction: column;
+	text-align: left;
+	color: #fff;
+	padding: 20px;
+}
+.content-blog p{
+	color: rgba(255, 255, 255, 0.788);
+	font-family: IRANSansLight;
+	margin-top: 5px;
 }
