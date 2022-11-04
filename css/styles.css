@@ -44,6 +44,9 @@ h2{
 	transition: .2s;
 
 }
+
+/*header*/
+
 header{
 	padding: 25px 100px;
 	display: flex;
@@ -71,7 +74,7 @@ header{
 	padding: 10px 30px;
 }
 
-
+/*banner*/
 
 .banner{
 	display: flex;
@@ -243,6 +246,7 @@ header{
 	color: #02E4AF;
 }
 
+/*chart*/
 
 .chart{
 	padding: 60px 100px;
@@ -272,7 +276,7 @@ header{
 }
 
 
-
+/*table*/
 
   .container{
 	padding: 60px 100px;
@@ -375,7 +379,7 @@ header{
   }
 
 
-
+/*blog*/
 
 
 .blog{
@@ -444,4 +448,81 @@ header{
 	color: rgba(255, 255, 255, 0.788);
 	font-family: IRANSansLight;
 	margin-top: 5px;
+}
+
+
+/*footer*/
+footer {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 60px 100px;
+	background-color: #fff;
+}
+footer div{
+	width: 400px;
+}
+
+footer div h4{
+	color: #02E4AF;
+}
+footer div hr{
+	color: #fff;
+	margin-top: 10px;
+}
+footer div ul{
+	list-style: none;
+	margin-top: 10px;
+}
+footer div li{
+	margin-top: 10px;
+}
+footer div li a{
+	color: #15336F;
+	text-decoration: none;
+}
+footer div p{
+	margin-top: 10px;
+	color: #15336F;
+	line-height: 35px;
+}
+footer div input{
+	width: 265px;
+	padding: 15px;
+	border-radius: 40px;
+	border: 1px solid #B7B7B7;
+	background-color: #fdfdfd;
+}
+footer div button{
+	background-color: #02E4AF;
+	color: #fff;
+	border: none;
+	border-radius: 40px;
+	padding: 15px;
+	width: 75px;
+	cursor: pointer;
+}
+
+
+
+
+@media(max-width: 1200px){
+	.banner img{
+		width: 400px;
+	}
+	.banner div{
+		width: 500px;
+	}
+}
+@media(max-width: 990px){
+	.section{
+		flex-direction: column;
+	}
+	.section-content{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.statistics-today{
+		margin-top: 50px;
+	}
 }
