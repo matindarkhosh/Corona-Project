@@ -107,3 +107,110 @@ document.addEventListener('DOMContentloaded' , () => {
 
 
 });
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '69bad67a76msh67092ae29475b81p1c579ajsncfd233107572',
+		'X-RapidAPI-Host': 'covid-19-news.p.rapidapi.com'
+	}
+};
+
+fetch('https://covid-19-news.p.rapidapi.com/v1/covid?q=covid&lang=en&media=True', options)
+	.then(response => response.json())
+	.then(data23 => {
+  
+  
+    for(let e=0;e<=6;e++){
+      console.log(data23.articles[e]);
+      let title2 = data23.articles.author;
+      let summary = data23.articles.summary;
+const blog = document.querySelector(".blog");
+    const boxBlog = `        <div class="title">
+    <h2>BLOG</h2>
+    <a href="#">See More</a>
+</div>
+
+<div class="boxs">
+    <div>
+        <div class="blog-box">
+            <div class="org-box">
+                <img src="./images/doctor-with-stethoscope-hands-hospital-background.png" alt="">
+                <div class="overlay">
+                    <div class="content-blog">
+                        <h3>${title2[0]}</h3>
+                        <p>${summary[0]}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="org-box">
+                <img src="./images/doctor-with-stethoscope-hands-hospital-background.png" alt="">
+                <div class="overlay">
+                    <div class="content-blog">
+                        <h3>${title2[1]}</h3>
+                        <p>${summary[1]}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="blog-box">
+            <div class="org-box">
+                <img src="./images/doctor-with-stethoscope-hands-hospital-background.png" alt="">
+                <div class="overlay">
+                    <div class="content-blog">
+                        <h3>${title2[2]}</h3>
+                        <p>${summary[2]}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="org-box">
+                <img src="./images/doctor-with-stethoscope-hands-hospital-background.png" alt="">
+                <div class="overlay">
+                    <div class="content-blog">
+                        <h3>${title2[3]}</h3>
+                        <p>${summary[3]}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="blog-box">
+            <div class="org-box">
+                <img src="./images/doctor-with-stethoscope-hands-hospital-background.png" alt="">
+                <div class="overlay">
+                    <div class="content-blog">
+                        <h3>${title2[4]}</h3>
+                        <p>${summary[4]}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="org-box">
+                <img src="./images/doctor-with-stethoscope-hands-hospital-background.png" alt="">
+                <div class="overlay">
+                    <div class="content-blog">
+                        <h3>${title2[5]}</h3>
+                        <p>${summary[5]}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>`;
+      blog.innerHTML = boxBlog;
+      
+      
+
+    }
+     
+  })
+	.catch(err => console.error(err));
+
+  
+
+  const btnc  = document.querySelector("btnc").addEventListener("click" ,
+  
+  )
